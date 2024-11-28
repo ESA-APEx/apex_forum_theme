@@ -1,0 +1,35 @@
+{
+  "name": "apex",
+  "component": false,
+  "license_url": null,
+  "about_url": null,
+  "authors": null,
+  "theme_version": null,
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "assets": {
+    "NotesEsa": "assets/NotesEsa.woff2",
+    "NotesEsa-BoldItalic": "assets/NotesEsa-BoldItalic.woff2",
+    "NotesEsa-Bold": "assets/NotesEsa-Bold.woff2",
+    "NotesEsaLogos": "assets/NotesEsaLogos.woff2",
+    "NotesEsa-Italic": "assets/NotesEsa-Italic.woff2"
+  },
+  "color_schemes": {
+    "APEx": {
+      "primary": "003247",
+      "secondary": "ffffff",
+      "tertiary": "00AE9D",
+      "quaternary": "F47920",
+      "header_background": "003247",
+      "header_primary": "f3f3f3",
+      "highlight": "00AE9D",
+      "danger": "b85e48",
+      "success": "518751",
+      "love": "fa6c8d",
+      "selected": "e6e6e6",
+      "hover": "f0f0f0"
+    }
+  },
+  "modifiers": {},
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
+}

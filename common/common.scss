@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'NotesEsa';
+  font-style: normal;
+  font-weight: 400;
+  src: url($NotesEsa) format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NotesEsa';
+  font-style: italic;
+  font-weight: 400;
+  src: url($NotesEsa-Italic) format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NotesEsa';
+  font-style: bold;
+  font-weight: 700;
+  src: url($NotesEsa-Bold) format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NotesEsa';
+  font-style: italic;
+  font-weight: 700;
+  src: url($NotesEsa-BoldItalic) format('woff2');
+  font-display: swap;
+}
+
+
+:root {
+    --font-family: "NotesEsa", system-ui, sans-serif;
+    --heading-font-family: "NotesEsa", system-ui, sans-serif;
+    
+    --border-radius: 10px;
+    
+    --d-sidebar-background: transparent;
+    --d-sidebar-admin-background: transparent;
+    
+    --d-button-border-radius: var(--border-radius); 
+    --d-input-border-radius: var(--border-radius); 
+    --secondary-high: rgb(173, 189, 196);
+    
+    /* Fix for removing shadow in sidebar */
+    --secondary-rgb: var(--primary);
+    
+    
+    --border-color: rgba(255, 255, 255, 0.1);
+
+    
+}
+
+
+
+//  PAGE
+
+body {
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-family: var(--font-family);
+  font-size: 16px;
+}
+
+.blur-container {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.blur {
+  position: absolute;
+  width: 100vw;
+  height: 2800px;
+  right: 0;
+  transform: translateY(-10%);
+  z-index: -1;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 1430px;
+    aspect-ratio: 2;
+    right: 0;
+    top: 50%;
+    transform: translateX(15%) translateY(-15%) rotate(-10deg);
+    border-radius: 100%;
+    mix-blend-mode: normal;
+    filter: blur(336.075px);
+    background-color: var(--tertiary);
+    z-index: -1;
+    opacity: var(--opacity);
+  }
+}
+
+
+// TEXT
+
+.title {
+    color: var(--secondary) !important;
+}
+
+p, li {
+    color: var(--secondary-high);
+}
+
+blockquote p, p kbd, li kbd, details li, details p {
+    color: var(--primary);
+}
+
+blockquote {
+    border-radius: var(--border-radius);
+}
+
+.sidebar-section-link-wrapper .sidebar-section-link:focus, .sidebar-section-link-wrapper .sidebar-section-link:hover {
+    color: var(--primary) !important;
+}
+.sidebar-section-link-wrapper .sidebar-section-link  {
+    color: var(--secondary-high) !important;
+}
+
+.sidebar-section-wrapper .sidebar-section-header, .admin-area .sidebar-wrapper .admin-panel .sidebar-section-header-text {
+    color: var(--secondary) !important;
+}
+
+.sidebar-section-link-wrapper .sidebar-section-link.active {
+    color: var(--tertiary) !important;
+    background-color: transparent;
+}
+
+.topic-body .cooked details, details .d-editor-preview, details.details__boxed {
+    color: var(--primary);
+}
+
+// CONTENT 
+.topic-map.--op, .topic-list th,  .topic-list-item {
+    border-color: var(--border-color);
+}
+
+.svg-icon, .svg-icon-title  {
+    fill: var(--tertiary);
+}
+
+.badge-category__wrapper .badge-category__name {
+    color: var(--secondary-high);
+}
+
+.select-kit-body .badge-category__wrapper .badge-category__name, 
+.select-kit.combo-box.tag-drop   {
+    color: var(--primary);
+}
+
+.select-kit .d-icon {
+    fill: var(--primary) !important;
+}
+
+.boxed.white.admin-content {
+    color: var(--primary);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.color-picker .add-on {
+    background-color: transparent;
+    border: none;
+}
+
+.admin-customize .colors .description {
+    color: var(--secondary-high);
+}
+
+// BUTTONS
+.btn-default {
+    background-color: var(--tertiary);
+    color: white !important;
+}
+.btn-default:hover {
+    background-color: var(--tertiary-hover) !important;
+}
+.list-controls .combo-box .combo-box-header {
+    background-color: var(--tertiary);
+    color: white !important;
+    border: none;
+}
+
+.select-kit.combo-box.tag-drop .tag-drop-header, .select-kit.combo-box.tag-drop .selected-name {
+    color: white !important;
+}
+
+.combo-box svg, .btn-default svg {
+    fill: white !important;
+}
+
+
+// TABLE
+
+table th, .topic-list td  {
+    color: var(--secondary);
+}
+
+
+// SIDEBAR
+
+.sidebar-wrapper .sidebar-container { 
+    border: none;
+}
+
+.sidebar-section-wrapper {
+    border-bottom: 1px solid var(--border-color);
+}
