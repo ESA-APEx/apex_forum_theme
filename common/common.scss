@@ -39,7 +39,9 @@
     
     --d-button-border-radius: var(--border-radius); 
     --d-input-border-radius: var(--border-radius); 
+    --d-input-border: 1px solid var(--primary);
     --secondary-high: rgb(173, 189, 196);
+    --secondary-ultrahigh: #f2f2f2;
     
     /* Fix for removing shadow in sidebar */
     --secondary-rgb: var(--primary);
@@ -105,7 +107,7 @@ p, li {
     color: var(--secondary-high);
 }
 
-blockquote p, p kbd, li kbd, details li, details p {
+blockquote p, p kbd, li kbd, details li, details p, blockquote h1,  blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6{
     color: var(--primary);
 }
 
@@ -129,11 +131,28 @@ blockquote {
     background-color: transparent;
 }
 
+.topic-meta-data .post-info a, .timeline-container .topic-timeline .start-date, .timeline-container .topic-timeline .now-date  {
+    color: var(--secondary) !important;
+}
 .topic-body .cooked details, details .d-editor-preview, details.details__boxed {
     color: var(--primary);
+    border-radius: var(--border-radius);
+}
+
+.timeline-container .topic-timeline .timeline-ago {
+    color: var(--secondary-high) !important;
+}
+
+.timeline-container .topic-timeline .timeline-handle {
+    background-color: var(--tertiary);
+}
+
+span.chcklst-box.checked.fa-square-check-o:before, span.chcklst-box:not(.checked).fa-square-o:before {
+    background-color: var(--secondary-high);
 }
 
 // CONTENT 
+
 .topic-map.--op, .topic-list th,  .topic-list-item {
     border-color: var(--border-color);
 }
@@ -152,7 +171,7 @@ blockquote {
 }
 
 .select-kit .d-icon {
-    fill: var(--primary) !important;
+    fill: var(--secondary) !important;
 }
 
 .boxed.white.admin-content {
@@ -170,6 +189,75 @@ blockquote {
     color: var(--secondary-high);
 }
 
+.category-list tbody .category h3 a[href], .category-list tbody .category h4 a[href] {
+    color: var(--secondary) !important;
+}
+.categories-list .category .category-description {
+    color: var(--secondary-high) !important;
+}
+.list-cell, .category-list td, .category-list th, .table-heading, .latest-topic-list-item .topic-last-activity a, .latest-topic-list .posts-map, .top-topic-list .posts-map  {
+    color: var(--secondary) !important;
+}
+
+.hashtag-cooked {
+    background-color: var(--tertiary);
+    color: var(--secondary);
+}
+
+nav.post-controls .actions button.create  {
+    color: var(--secondary);
+}
+
+
+nav.post-controls .actions button:hover.create  {
+    color: var(--tertiary);
+}
+
+#topic-footer-buttons .pinned-button .reason, #topic-footer-buttons .topic-notifications-button .reason {
+    color: var(--secondary-high);
+}
+#topic-title h1 a {
+    color: var(--secondary);    
+}
+
+.topic-map__contents .topic-map__stats.--single-stat button span, 
+.topic-map .estimated-read-time, 
+.topic-map .estimated-read-time span:first-child   {
+    color: var(--secondary-high) !important;
+}
+
+.top-sub-section .topic-info {
+    color: var(--secondary-high) !important;
+}
+
+
+.names>span a {
+    color: var(--tertiary);
+}
+
+textarea {
+    border-color: var(--primary);
+}
+
+.user-main .about.collapsed-info .details {
+    border-bottom: none !important;
+}
+
+.new-user-wrapper .user-navigation {
+    border: none !important;
+}
+.new-user-wrapper section.user-navigation {
+    margin-bottom: .5rem;
+    background-color: var(--tertiary);
+    border-radius: var(--border-radius);
+}
+
+.new-user-wrapper section.user-navigation .nav-pills li a.active {
+    background: var(--secondary) !important;
+}
+
+
+
 // BUTTONS
 .btn-default {
     background-color: var(--tertiary);
@@ -177,6 +265,10 @@ blockquote {
 }
 .btn-default:hover {
     background-color: var(--tertiary-hover) !important;
+}
+
+.btn-primary .svg-icon, .svg-icon-title {
+    fill: var(--secondary) !important;
 }
 .list-controls .combo-box .combo-box-header {
     background-color: var(--tertiary);
@@ -195,7 +287,12 @@ blockquote {
 
 // TABLE
 
-table th, .topic-list td  {
+table th, .topic-list td, .latest-topic-list .table-heading, .top-topic-list .table-heading  {
+    color: var(--secondary);
+}
+
+// NAVBAR
+.nav-pills>li>a {
     color: var(--secondary);
 }
 
@@ -208,4 +305,216 @@ table th, .topic-list td  {
 
 .sidebar-section-wrapper {
     border-bottom: 1px solid var(--border-color);
+}
+
+// CHAT
+
+.chat-channel-row .chat-channel__metadata-date, .c-footer__item .d-button-label  {
+    color: var(--primary);
+}
+
+// SEARCH
+
+.search-menu .browser-search-tip, .search-menu .search-random-quick-tip, .search-menu-container .browser-search-tip, .search-menu-container .search-random-quick-tip {
+    color: var(--primary);
+}
+
+.search-menu .results .label-suffix, .search-menu-container .results .label-suffix, 
+.search-menu .results .extra-hint, .search-menu-container .results .extra-hint {
+    color: var(--primary);
+}
+
+.search-menu .search-link:focus, .search-menu .search-link:hover, .search-menu-container .search-link:focus, {
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: var(--border-radius);
+}
+
+.search-menu-container .search-link:hover .label-suffix, .search-menu-container .search-link:hover .extra-hint {
+    color: var(--secondary);
+}
+
+.search-menu .results .search-result-group .group-result .group-names, .search-menu-container .results .search-result-group .group-result .group-names {
+    color: var(--primary);
+}
+
+.search-menu .results .search-result-group .search-link:hover .group-result .group-names, .search-menu-container .results .search-result-group .search-link:hover .group-result .group-names {
+    color: var(--secondary);
+}
+
+// USER CONTENT
+
+.user-content {
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+}
+.user-content p {
+    color: var(--primary);   
+}
+
+.user-content h1, .user-content h2, .user-content h3, .user-content h4, .user-content h5, .user-content h6 {
+    color: var(--primary);
+}
+.user-content .stats-section .label {
+    color: var(--primary);
+}
+
+.user-content table th,
+.user-content .topic-list td,
+.user-content .title,
+.user-content .user-stream .relative-date, .user-stream .delete-info, .user-stream .draft-type{
+    color: var(--primary) !important;
+}
+
+.user-content .topic-list-item, 
+.user-content tr,
+.user-content tbody,
+.user-content li {
+    border-color: var(--secondary-ultrahigh) !important;
+}
+
+.user-content .select-kit.single-select.dropdown-select-box .select-kit-row .texts .desc,
+.user-content.select-kit .select-kit-row.category-row .category-desc, 
+.user-content .custom-message-length{
+    color: var(--secondary-high);
+}
+
+.user-content .select-kit .d-icon{
+    fill: var(--tertiary) !important;
+}
+
+// NOTIFICATIONS
+
+.select-kit.dropdown-select-box.notifications-filter .notifications-filter-header .filter-text {
+    color: var(--primary);
+}
+
+.select-kit.dropdown-select-box.notifications-filter .notifications-filter-header:hover .filter-text {
+    color: var(--secondary);
+}
+
+.user-content .user-notifications-filter {
+    margin-bottom: .5rem;
+    border-bottom: none;
+}
+
+.user-menu .quick-access-panel, .user-notifications-list {
+    border-color: var(--secondary-ultrahigh);
+}
+
+
+.user-info .user-detail .name-line>a,
+.user-info .user-detail .title {
+    color: var(--secondary);
+}
+
+.user-info .user-detail .details,
+.user-info .user-detail .details .granted-on {
+    color: var(--secondary-high);
+}
+
+
+// DIALOGS
+
+#reply-control.open {
+    border-radius: var(--border-radius);
+}
+
+.open .grippie {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+#reply-control .reply-area {
+    padding: 1.5rem;
+    
+}
+
+#reply-control .reply-to {
+    color: var(--primary);
+}
+
+#reply-control .select-kit .d-icon {
+    fill: var(--tertiary) !important;
+}
+
+#reply-control .select-kit.dropdown-select-box.composer-actions .select-kit-header {
+    border: 1px solid var(--primary);
+}
+
+#reply-control .select-kit.dropdown-select-box.composer-actions .select-kit-header:hover, 
+.select-kit.dropdown-select-box.composer-actions .select-kit-header:focus {
+    background-color: var(--primary);
+}
+
+#reply-control .select-kit.dropdown-select-box.composer-actions .select-kit-header:hover .d-icon , 
+.select-kit.dropdown-select-box.composer-actions .select-kit-header:focus .d-icon  {
+    fill: var(--secondary) !important;
+}
+
+#reply-control .select-kit.single-select.dropdown-select-box .select-kit-row .texts .desc,
+#reply-control .select-kit .select-kit-row.category-row .category-desc {
+    color: var(--secondary-high);
+}
+
+#reply-control .select-kit.combo-box .select-kit-header,
+#reply-control .select-kit.multi-select .multi-select-header,
+#reply-control .d-editor-textarea-wrapper {
+    border-color: var(--primary);
+}
+
+#reply-control .select-kit.combo-box.category-chooser .select-kit-row .topic-count {
+    color: var(--tertiary);
+}
+
+#reply-control .tags-input .mini-tag-chooser .select-kit-header {
+    color: var(--primary);
+}
+
+#reply-control .d-editor-preview, 
+#reply-control .d-editor-preview p, 
+#reply-control .d-editor-preview li {
+    color: var(--primary) !important;
+}
+#reply-control .save-or-cancel .cancel {
+    color: var(--tertiary);
+}
+
+#reply-control .composer-popup {
+    background-color: var(--secondary-ultrahigh);
+}
+
+#reply-control .composer-popup p,
+#reply-control .composer-popup li {
+  color: var(--primary);   
+}
+
+
+
+.d-modal__container {
+    border-radius: var(--border-radius);
+}
+
+.d-modal__container, 
+.d-modal__container p , 
+.d-modal__container li, 
+.d-modal__container label {
+    color: var(--primary);
+}
+
+.d-modal__container .select-kit.single-select.dropdown-select-box .select-kit-row .texts .desc,
+.d-modal__container .select-kit .select-kit-row.category-row .category-desc, 
+.d-modal__container .custom-message-length{
+    color: var(--secondary-high);
+}
+
+.d-modal__container .select-kit .d-icon{
+    fill: var(--tertiary) !important;
+}
+
+
+// BADGES
+
+.badge-card {
+    border-radius: var(--border-radius);
 }
