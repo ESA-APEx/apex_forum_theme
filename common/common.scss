@@ -40,6 +40,10 @@
     --d-button-border-radius: var(--border-radius); 
     --d-input-border-radius: var(--border-radius); 
     --d-input-border: 1px solid var(--primary);
+
+
+    --primary-medium: var(--primary);
+    --primary-med-or-secondary-high: var(--primary);
     --secondary-high: rgb(173, 189, 196);
     --secondary-ultrahigh: #f2f2f2;
     
@@ -165,19 +169,18 @@ span.chcklst-box.checked.fa-square-check-o:before, span.chcklst-box:not(.checked
     color: var(--secondary-high);
 }
 
+.select-kit-header .badge-category__wrapper .badge-category__name {
+    color: var(--secondary);
+}
+
+
 .select-kit-body .badge-category__wrapper .badge-category__name, 
 .select-kit.combo-box.tag-drop   {
-    color: var(--primary);
+    color: var(--primary) !important;
 }
 
 .select-kit .d-icon {
     fill: var(--secondary) !important;
-}
-
-.boxed.white.admin-content {
-    color: var(--primary);
-    padding: 1rem;
-    border-radius: var(--border-radius);
 }
 
 .color-picker .add-on {
@@ -256,6 +259,10 @@ textarea {
     background: var(--secondary) !important;
 }
 
+.archetype-private_message .topic-map {
+    border-radius: var(--border-radius);
+}
+
 
 
 // BUTTONS
@@ -284,6 +291,10 @@ textarea {
     fill: white !important;
 }
 
+.uploaded-image-preview {
+    background-color: var(--secondary-ultrahigh);
+}
+
 
 // TABLE
 
@@ -307,6 +318,12 @@ table th, .topic-list td, .latest-topic-list .table-heading, .top-topic-list .ta
     border-bottom: 1px solid var(--border-color);
 }
 
+.sidebar-more-section-links-details-content {
+    background-color: var(--secondary);
+}
+.sidebar-more-section-links-details-content span {
+    color: var(--primary);
+}
 // CHAT
 
 .chat-channel-row .chat-channel__metadata-date, .c-footer__item .d-button-label  {
@@ -348,9 +365,40 @@ table th, .topic-list td, .latest-topic-list .table-heading, .top-topic-list .ta
     padding: 1.5rem;
     border-radius: var(--border-radius);
 }
-.user-content p {
+.user-content p, 
+.user-content label,
+.user-content span, 
+.user-content div,
+.user-content legend{
     color: var(--primary);   
 }
+
+.user-content *:not(.d-editor-button-bar) > .btn {
+    background-color: var(--tertiary);
+    color: white !important;
+}
+
+.user-content *:not(.d-editor-button-bar) >  .btn:hover {
+     background-color: var(--tertiary-hover) !important;
+}
+
+.user-content .d-editor-button-bar .btn:hover {
+     background-color: var(--tertiary) !important;
+}
+
+.user-content .d-editor-button-bar .btn:hover .svg-icon{
+     fill: var(--secondary) !important;
+}
+
+
+.user-content *:not(.d-editor-button-bar) > .btn .svg-icon, 
+.user-content *:not(.d-editor-button-bar) > .btn .svg-icon-title {
+    fill: var(--secondary) !important;
+} 
+
+.user-content *:not(.d-editor-button-bar) > .btn .d-button-label {
+    color: var(--secondary) !important;
+} 
 
 .user-content h1, .user-content h2, .user-content h3, .user-content h4, .user-content h5, .user-content h6 {
     color: var(--primary);
@@ -369,13 +417,19 @@ table th, .topic-list td, .latest-topic-list .table-heading, .top-topic-list .ta
 .user-content .topic-list-item, 
 .user-content tr,
 .user-content tbody,
-.user-content li {
+.user-content li,
+.user-content .controls {
     border-color: var(--secondary-ultrahigh) !important;
+}
+
+.user-content summary {
+    border-color: var(--primary) !important;
 }
 
 .user-content .select-kit.single-select.dropdown-select-box .select-kit-row .texts .desc,
 .user-content.select-kit .select-kit-row.category-row .category-desc, 
-.user-content .custom-message-length{
+.user-content .custom-message-length,
+.user-content .instructions {
     color: var(--secondary-high);
 }
 
@@ -517,4 +571,199 @@ table th, .topic-list td, .latest-topic-list .table-heading, .top-topic-list .ta
 
 .badge-card {
     border-radius: var(--border-radius);
+}
+
+// FILTERS
+
+.reviewable-filters {
+    background-color: var(--secondary);
+    border-radius: var(--border-radius);
+    color: var(--primary);
+}
+
+.reviewable-filters label {
+    color: var(--primary);
+}
+
+.reviewable-filters summary {
+    border-color: var(--primary) !important;
+}
+.reviewable-filters .select-kit-collection::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary) !important;
+}
+
+// ADMIN
+
+.boxed.white.admin-content {
+    color: var(--primary);
+    padding: 0.5rem 2rem;
+    border-radius: var(--border-radius);
+}
+
+.admin-content summary {
+    padding: .5rem !important;
+}
+.admin-content summary.single-select-header:hover span{
+    color: var(--secondary) !important;
+}
+
+
+.admin-content label {
+    color: var(--primary);
+}
+.admin-content .btn {
+    background-color: var(--tertiary);
+    color: white !important;
+}
+.admin-content .btn .svg-icon{
+     fill: var(--secondary) !important;
+}
+
+.admin-content .btn:hover {
+     background-color: var(--tertiary-hover) !important;
+}
+
+.admin-controls {
+    margin-bottom: 0.5rem;
+}
+
+
+.admin-controls,
+.admin-controls .controls {
+     background-color: var(--primary);
+     border-radius: var(--border-radius);
+
+}
+
+.admin-controls label {
+    color: var(--secondary) !important;
+}
+
+.admin-controls .nav-pills {
+    padding: 0.25rem 0.5rem !important;
+}
+
+.admin-controls .nav-pills>li> a:hover {
+    background-color: var(--secondary);
+    color: var(--tertiary) !important;
+}
+
+.admin-controls nav{
+    background-color: var(--primary);
+    border-radius: var(--border-radius);
+    padding: .25rem 0.5rem;
+    color: var(--secondary);
+}
+
+.admin-controls nav li a  {
+    border-radius: var(--border-radius);
+    color: var(--secondary) !important;
+}
+
+.admin-controls nav::before,
+.admin-controls nav::after {
+    display: none;
+}
+
+.admin-controls nav li a.active {
+    border-bottom: none;
+    color: var(--secondary);
+}
+
+.admin-content summary {
+    border-color: var(--primary) !important;
+}
+.admin-detail,
+.admin-content .nav-stacked li{
+    border-color: var(--secondary-ultrahigh);
+}
+
+.settings .setting.overridden.string input[type=text], 
+.settings .setting.overridden.string input[type=password], 
+.settings .setting.overridden.string textarea {
+    background-color: var(--tertiary-low);
+}
+
+
+// USER DIRECTORY
+
+.users-directory h2 span {
+    color: var(--secondary) !important;
+}
+
+.users-directory label,
+.users-directory div {
+    color: var(--secondary-high) !important;
+}
+
+.users-directory .directory-table__cell {
+    background-color: transparent;
+    color: var(--secondary);
+}
+
+.users-directory .directory-table__cell span {
+    color: var(--secondary) !important;
+}
+
+.users-directory .me .directory-table__cell {
+    background-color: var(--tertiary-low) !important;
+    color: var(--primary) !important;
+}
+.users-directory .me .directory-table__cell span {
+   color: var(--primary) !important;
+}
+
+// GROUPS
+
+.group-box,
+.group-details-container,
+.user-content-wrapper {
+    border-radius: var(--border-radius);
+    background-color: var(--secondary);
+    border: none !important;
+}
+.group-box  div {
+    color: var(--primary) !important;
+}
+
+.admin-group-automatic-tooltip {
+    background-color: var(--primary);
+}
+
+.group-details-container hr {
+    border-color: var(--secondary-ultrahigh);
+}
+
+.user-content-wrapper {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: calc(100% - 2rem);
+}
+
+.user-content-wrapper span,
+.user-content-wrapper .nav-pills>li>a {
+    color: var(--primary);
+}
+
+.user-content-wrapper .select-kit.combo-box .select-kit-header {
+    border-color: var(--primary) !important;
+    color: var(--primary) !important;
+}
+
+
+.user-content-wrapper .select-kit .select-kit-collection::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary);
+}
+
+.user-content-wrapper .user-content {
+    margin-top: 0;
+    border-left: 1px solid var(--secondary-ultrahigh);
+}
+
+.user-content-wrapper .user-secondary-navigation li {
+    border-bottom:  1px solid var(--secondary-ultrahigh);
+}
+
+.user-content-wrapper .user-stream-item {
+    border-color: var(--secondary-ultrahigh);
 }
