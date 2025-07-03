@@ -325,7 +325,7 @@ table th, .topic-list td, .latest-topic-list .table-heading, .top-topic-list .ta
 }
 // CHAT
 
-.chat-channel-row .chat-channel__metadata-date, .c-footer__item .d-button-label  {
+.chat-channel-row .chat-channel__metadata-date, .c-footer__item .d-button-label, .chat-message-text p {
     color: var(--primary);
 }
 
