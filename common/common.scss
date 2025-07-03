@@ -157,6 +157,10 @@ span.chcklst-box.checked.fa-square-check-o:before, span.chcklst-box:not(.checked
 
 // CONTENT 
 
+.highlighted {
+  animation: none !important;
+}
+
 .topic-map.--op, .topic-list th,  .topic-list-item {
     border-color: var(--border-color);
 }
