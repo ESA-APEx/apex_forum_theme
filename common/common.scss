@@ -2,32 +2,28 @@
   font-family: 'NotesEsa';
   font-style: normal;
   font-weight: 400;
-  src: url('https://apex.esa.int/themes/custom/vitotheme/dist/fonts/NotesEsa.woff2') format('woff2'),
-       url($notes_esa) format('woff2');
+  src: url($notes_esa) format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'NotesEsa';
   font-style: italic;
   font-weight: 400;
-  src: url('https://apex.esa.int/themes/custom/vitotheme/dist/fonts/NotesEsa-Italic.woff2') format('woff2'),
-       url($notes_esa_italic) format('woff2');
+  src: url($notes_esa_italic) format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'NotesEsa';
   font-style: normal;
   font-weight: 700;
-  src: url('https://apex.esa.int/themes/custom/vitotheme/dist/fonts/NotesEsa-Bold.woff2') format('woff2'),
-       url($notes_esa_bold) format('woff2');
+  src: url($notes_esa_bold) format('woff2');
   font-display: swap;
 } 
 @font-face {
   font-family: 'NotesEsa';
   font-style: italic;
   font-weight: 700;
-  src: url('https://apex.esa.int/themes/custom/vitotheme/dist/fonts/NotesEsa-BoldItalic.woff2') format('woff2'),
-       url($notes_esa_bold_italic) format('woff2');
+  src: url($notes_esa_bold_italic) format('woff2');
   font-display: swap;
 }
 
