@@ -4,15 +4,15 @@
   "license_url": null,
   "about_url": null,
   "authors": null,
-  "theme_version": null,
+  "theme_version": "2026.03.18.1",
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
-    "notes_esa": "assets/NotesEsa.woff2",
-    "notes_esa_bold_italic": "assets/NotesEsa-BoldItalic.woff2",
-    "notes_esa_bold": "assets/NotesEsa-Bold.woff2",
+    "notes_esa_v2": "assets/NotesEsa-v2.woff2",
+    "notes_esa_bold_italic_v2": "assets/NotesEsa-BoldItalic-v2.woff2",
+    "notes_esa_bold_v2": "assets/NotesEsa-Bold-v2.woff2",
     "notes_esa_logos": "assets/NotesEsaLogos.woff2",
-    "notes_esa_italic": "assets/NotesEsa-Italic.woff2"
+    "notes_esa_italic_v2": "assets/NotesEsa-Italic-v2.woff2"
   },
   "color_schemes": {
     "APEx": {
